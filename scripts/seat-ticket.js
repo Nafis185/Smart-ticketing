@@ -49,6 +49,6 @@ function Cuppon() {
   if (take >= 2000) {
     let cut = parseInt(take * 0.2);
     let final = take - cut;
-    document.getElementById("Gp").textContent = final;
+    document.getElementById("GT").textContent = final;
   }
 }
