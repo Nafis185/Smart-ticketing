@@ -109,7 +109,7 @@
       </section>
 
       <!-- ticket process -->
-      <section class="bg-slate-300 pt-8">
+      <section id="ticketSection" class="bg-slate-300 pt-8">
         <!-- heading part  -->
         <div class="flex flex-col justify-center items-center pb-5 pl-20 pr-20">
           <h1 class="font-black">P.H Paribahan</h1>
@@ -174,7 +174,11 @@
             <p>Per seat</p>
           </div>
         </div>
-
+        <div class="flex justify-center mt-10">
+        <button id="count" class="pl-9 pr-9 pt-6 pb-6 bg-red-600">
+            40 seat Left
+        </button>
+    </div>
         <!-- 2nd card  -->
         <div class="flex justify-around space-x-10 pt-6 pb-8">
           <!--L show ticket part  -->
@@ -195,53 +199,55 @@
             <hr />
             <!-- seats -->
             <div class="flex justify-end pt-4">
-              <button class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600">
+              <button  class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600">
                 <img src="images/steering.svg" alt="" />
               </button>
             </div>
             <!-- a line -->
-            <div class="flex items-center justify-between pt-4">
+            <div  class="flex items-center justify-between pt-4">
               <h1 class="pl-2">A</h1>
-              <button
+              <button  onclick="realme('A1', 'Economy' , 550)" id="A1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 A1
               </button>
-              <button
+              <button  onclick="realme('A2', 'Economy' , 550)" id="A2" 
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 A2
               </button>
-              <button
+              <button  onclick="realme('A3', 'Economy' , 550)" id="A3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 A3
               </button>
-              <button
+              <button  onclick="realme('A4', 'Economy' , 550)" id="A4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 A4
               </button>
+
+
             </div>
             <!-- B line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">B</h1>
-              <button
+              <button onclick="realme('B1', 'Economy' , 550)" id="B1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 B1
               </button>
-              <button
+              <button onclick="realme('B2', 'Economy' , 550)" id="B2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 B2
               </button>
-              <button
+              <button onclick="realme('B3', 'Economy' , 550)" id="B3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 B3
               </button>
-              <button
+              <button onclick="realme('B4', 'Economy' , 550)" id="B4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 B4
@@ -250,22 +256,22 @@
             <!-- C line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">C</h1>
-              <button
+              <button onclick="realme('C1', 'Economy' , 550)" id="C1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 C1
               </button>
-              <button
+              <button onclick="realme('C2', 'Economy' , 550)" id="C2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 C2
               </button>
-              <button
+              <button onclick="realme('C3', 'Economy' , 550)" id="C3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 C3
               </button>
-              <button
+              <button onclick="realme('C4', 'Economy' , 550)" id="C4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 C4
@@ -274,22 +280,22 @@
             <!-- d line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">D</h1>
-              <button
+              <button onclick="realme('D1', 'Economy' , 550)" id="D1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 D1
               </button>
-              <button
+              <button onclick="realme('D2', 'Economy' , 550)" id="D2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 D2
               </button>
-              <button
+              <button onclick="realme('D3', 'Economy' , 550)" id="D3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 D3
               </button>
-              <button
+              <button onclick="realme('D4', 'Economy' , 550)" id="D4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 D4
@@ -298,22 +304,22 @@
             <!-- E line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">E</h1>
-              <button
+              <button onclick="realme('E1', 'Economy' , 550)" id="E1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 E1
               </button>
-              <button
+              <button onclick="realme('E2', 'Economy' , 550)" id="E2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 E2
               </button>
-              <button
+              <button onclick="realme('E3', 'Economy' , 550)" id="E3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 E3
               </button>
-              <button
+              <button onclick="realme('E4', 'Economy' , 550)" id="E4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 E4
@@ -322,22 +328,22 @@
             <!-- F line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">F</h1>
-              <button
+              <button onclick="realme('F1', 'Economy' , 550)" id="F1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 F1
               </button>
-              <button
+              <button onclick="realme('F2', 'Economy' , 550)" id="F2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 F2
               </button>
-              <button
+              <button onclick="realme('F3', 'Economy' , 550)" id="F3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 F3
               </button>
-              <button
+              <button onclick="realme('F4', 'Economy' , 550)" id="F4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 F4
@@ -346,46 +352,47 @@
             <!-- G line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">G</h1>
-              <button
+              <button onclick="realme('G1', 'Economy' , 550)" id="G1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 G1
               </button>
-              <button
+              <button onclick="realme('G2', 'Economy' , 550)" id="G2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 G2
               </button>
-              <button
+              <button onclick="realme('G3', 'Economy' , 550)" id="G3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 G3
               </button>
-              <button
+              <button onclick="realme('G4', 'Economy' , 550)" id="G4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 G4
               </button>
             </div>
+
             <!-- H line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">H</h1>
-              <button
+              <button onclick="realme('H1', 'Economy' , 550)" id="H1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 H1
               </button>
-              <button
+              <button onclick="realme('H2', 'Economy' , 550)" id="H2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 H2
               </button>
-              <button
+              <button onclick="realme('H3', 'Economy' , 550)" id="H3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 H3
               </button>
-              <button
+              <button onclick="realme('H4', 'Economy' , 550)" id="H4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 H4
@@ -394,22 +401,22 @@
             <!-- I line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">I</h1>
-              <button
+              <button onclick="realme('I1', 'Economy' , 550)" id="I1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 I 1
               </button>
-              <button
+              <button onclick="realme('I2', 'Economy' , 550)" id="I2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 I 2
               </button>
-              <button
+              <button onclick="realme('I3', 'Economy' , 550)" id="I3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 I 3
               </button>
-              <button
+              <button onclick="realme('I4', 'Economy' , 550)" id="I4" 
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 I 4
@@ -418,22 +425,22 @@
             <!-- J line -->
             <div class="flex items-center justify-between pt-4">
               <h1 class="pl-2">J</h1>
-              <button
+              <button onclick="realme('J1', 'Economy' , 550)" id="J1"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 J 1
               </button>
-              <button
+              <button onclick="realme('J2', 'Economy' , 550)" id="J2"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 J 2
               </button>
-              <button
+              <button onclick="realme('J3', 'Economy' , 550)" id="J3"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 J 3
               </button>
-              <button
+              <button onclick="realme('J4', 'Economy' , 550)" id="J4"
                 class="pl-4 pr-4 pt-2 pb-2 rounded bg-slate-600 text-white"
               >
                 J 4
@@ -445,32 +452,30 @@
 
           <div class="w-96">
             <div class="pb-2 font-medium">
-              <h1>Select Your seat</h1>
+              <h1>Select Your seat <span><button class="bg-green-500 text-white rounded pr-1 pl-1">0</button></span></h1>
             </div>
             <hr />
 
             <div class="bg-orange-100 pb-2">
               <div class="flex justify-between pb-2">
-                <h1>seat</h1>
+                  <h1 class="flex gap-3 mt-2">seat
+                        <button id="cc" class="bg-lime-500 rounded-sm text-black pl-3 pr-3"></button>
+                    </h1>
                 <h1>class</h1>
                 <h1>price</h1>
               </div>
               <hr />
+              
               <div class="flex justify-between pb-2">
-                <p>C2</p>
-                <p>Economy</p>
-                <p>550</p>
-              </div>
-              <div class="flex justify-between pb-2">
-                <p>C2</p>
-                <p>Economy</p>
-                <p>550</p>
+                <p id="SelectItem"></p>
+               
               </div>
               <hr />
               <div class="flex justify-between pb-2">
                 <p>Total price</p>
-                <p>BDT 1100</p>
+                <p id="price"></p>
               </div>
+              <p id="disc"></p>
               <div class="flex justify-around pt-2">
                 <input
                   class="rounded text-center"
@@ -483,7 +488,7 @@
               </div>
               <div class="flex justify-between pt-2">
                 <p>Grand Total</p>
-                <p>BDT 1100</p>
+                <p id="GT"></p>
               </div>
             </div>
 
@@ -508,7 +513,7 @@
               />
             </div>
             <div class="flex justify-center pt-6">
-              <button class="bg-green-500 text-white w-96 h-10">Next</button>
+              <button onclick="ticket()" id="ticketPaymentDone" class="bg-green-500 text-white w-96 h-10">Next</button>
             </div>
             <div class="flex justify-around pt-4">
               <h1 class="arc">Terms and conditions</h1>
@@ -520,8 +525,8 @@
         </div>
       </section>
 
-      <!-- sucess -->
-      <section class="pt-8 pb-8">
+      <!-- success -->
+      <section id="ticketSuccess" class="pt-8 pb-8 hidden ">
        <div class="flex flex-col justify-center items-center">
          <div class="flex flex-col items-center ">
           <img src="images/success.png" alt="" />
@@ -573,6 +578,8 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/calculation.js"></script>
+    <script src="scripts/ticket.js"></script>
+    <script src="scripts/ticket-counts.js"></script>
+    <script src="scripts/seat-ticket.js"></script>
   </body>
 </html>
